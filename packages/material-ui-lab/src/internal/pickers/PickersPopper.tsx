@@ -237,6 +237,7 @@ const PickersPopper: React.FC<PickerPopperProps & WithStyles<typeof styles>> = (
         <TrapFocus
           open={open}
           disableAutoFocus
+          disableRestoreFocus
           disableEnforceFocus={role === 'tooltip'}
           isEnabled={() => true}
           getDoc={() => paperRef.current?.ownerDocument ?? document}
